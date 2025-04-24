@@ -1,0 +1,33 @@
+Descomplicando criação de pacotes
+
+Módulo -> serve como unidade organizacional do código que é carregado pelo comando de import (.py tb é um módulo)
+Pacote -> coleção de módulos com hierarquia
+
+Vantagens de modularização:
+- legibilidade
+- manutenção
+- reaproveitamento de código
+
+Vantagens de criar um pacote:
+- facilidade de compartilhamento
+- facilidade de instalação (pip install)
+
+Conceitos:
+
+- Pypi: repositório publico oficial de pacotes
+- Wheel e Sdist: dois tipo de distribuição
+- setuptools: pacote usado em setup.py para gerar as distribuições
+- Twine: pacote usado para subir as distribuições no repositório Pypi (ferramentas que ajudam na distribuição)
+
+Como chamar pacotes:
+Simples:
+
+import nome_pacote.sub_modulo
+ou
+from nome_pacote import sub_modulo
+
+Vários módulos:
+
+import nome_pacote.modulo.sub_modulo
+ou
+from nome_pacote.modulo import sub_modulo
